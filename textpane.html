@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SVG Icon Gallery</title>
+  <link rel="stylesheet" href="taskpane.css" />
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script src="taskpane.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>SVG Icon Gallery</h1>
+    <p>Search, insert, and download your icons.</p>
+  </header>
+
+  <label class="upload">
+    <span>Add SVG files</span>
+    <input id="fileInput" type="file" accept=".svg,image/svg+xml" multiple />
+  </label>
+
+  <input id="searchInput" type="search" placeholder="Search icons…" aria-label="Search icons" />
+  <p id="status" role="status"></p>
+  <section id="gallery" class="gallery" aria-label="Icon gallery"></section>
+</body>
+</html>
